@@ -5,10 +5,10 @@ import App from './App';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import reducer from './reducers';
+import todos from './reducers';
 
 
-const store = createStore(reducer);
+const store = createStore(todos);
 
 ReactDOM.render(
     <Provider store={store} >
